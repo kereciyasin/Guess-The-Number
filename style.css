@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  text-align: center;
 }
 body {
   background: linear-gradient(to left, #f7dede, #f69a9a);
@@ -13,8 +14,7 @@ h1 {
   font-style: normal;
 }
 
-.header {
-  text-align: center;
+.header  {
   margin-top: 50px;
 }
 .main {
@@ -36,9 +36,6 @@ h1 {
   font-size: 50px;
 }
 
-.text-container {
-  margin-right: 20px;
-}
 
 .my-input {
   padding: 5px 5px;
