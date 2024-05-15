@@ -13,19 +13,26 @@
     <main class="main">
       <div class="container">
         <div class="input-container">
-          <input type="number" class="my-input" />
-          <button class="my-button">Check</button>
+          <input
+            type="number"
+            id="guessInput"
+            class="my-input"
+            min="0"
+            max="100"
+          />
+          <button onclick="checkGuess()" class="my-button">Check</button>
         </div>
       </div>
 
       <div class="img-container">
         <div class="img-overlay"></div>
-        <img class="img" src="flat__preview_rev_1.png" alt="flat">
+        <img class="img" src="flat__preview_rev_1.png" alt="flat" />
       </div>
 
       <div class="text">
-        <h5 class="p1">Write the number.</h5>
-        <h6 class="p2">Number of attemps: </h6>
+        <h5 class="p1"></h5>
+        <h5 class="error-message"></h5>
+        <h6 class="p2">Number of attempts:</h6>
       </div>
     </main>
 
