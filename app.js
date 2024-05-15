@@ -1,9 +1,9 @@
-var randomNumber = Math.floor(Math.random() * 101); // 0 ile 100 arasında random bir sayı üretir
-var guessCount = 0; // Kullanıcının tahmin sayacı
+var randomNumber = Math.floor(Math.random() * 101); // rastgele sayi
+var guessCount = 0; // sayac 
 
 function checkGuess() {
-  var userGuess = parseInt(document.getElementById("guessInput").value);
-  var errorMessage = document.querySelector(".error-message");
+  var userGuess = parseInt(document.getElementById("guessInput").value); // kullanicidan ister
+  var errorMessage = document.querySelector(".error-message"); // mesaj 
 
   while (true) {
     if (userGuess < 0 || userGuess > 100) {
@@ -21,7 +21,7 @@ function checkGuess() {
         "The number you entered is greater than the random number.";
     }
 
-    guessCount++; // Tahmin sayacını artır
+    guessCount++; 
     document.querySelector(".p2").innerText =
       "Number of attempts: " + guessCount;
     document.querySelector(".error-message").innerText = "";
