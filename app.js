@@ -7,7 +7,7 @@ function checkGuess() {
 
   while (true) {
     if (userGuess < 0 || userGuess > 100) {
-      errorMessage.innerText = "Please enter a number between 0 and 100.";
+      errorMessage.innerText = "Please enter a number between 0 and 100!";
       break;
     } else if (userGuess === randomNumber) {
       document.querySelector(".p1").innerText =

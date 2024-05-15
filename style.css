@@ -26,10 +26,14 @@ h1 {
   align-items: center;
 }
 .error-message {
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
+  font-style: italic;
   background-color: red;
   color: black;
   font-weight: bold;
   display: inline-block;
+  font-size: 50px;
 }
 
 .text-container {
