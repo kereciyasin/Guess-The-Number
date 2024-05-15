@@ -1,24 +1,24 @@
-var randomNumber = Math.floor(Math.random() * 101); // 0 ile 100 arası rastgele sayı
+var randomNumber = Math.floor(Math.random() * 101); 
 
 var userGuess;
 var guessCount = 0; // Kullanıcının tahmin sayacı
 
 do {
-  userGuess = +prompt("0 ile 100 arasında bir sayı tahmin edin:");
+  userGuess = +prompt("Guess a number between 0 and 100:");
 
   if (userGuess < 0 || userGuess > 100) {
-    alert("Lütfen 0 ile 100 arasında bir sayı girin.");
+    alert("Please enter a number between 0 and 100.");
   } else {
     guessCount++; // girilen sayiyi artirir. 
 
     if (userGuess === randomNumber) {
-      alert("Tebrikler! Doğru tahmin ettiniz.");
+      alert("Congratulations! You guessed right.");
     } else if (userGuess < randomNumber) {
-      alert("Daha büyük bir sayı girin.");
+      alert("Enter a larger number.");
     } else {
-      alert("Daha küçük bir sayı girin.");
+      alert("Enter a smaller number.");
     }
   }
 } while (userGuess !== randomNumber); // girilen sayi esit degilse döngü devam eder.
 
-alert("Toplam tahmin sayınız: " + guessCount);
+alert("Total number of guesses: " + guessCount);
